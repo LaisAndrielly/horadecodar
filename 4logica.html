@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cálculo de Áreas</title>
+</head>
+<body>
+
+    <script>
+        let escolha = prompt("Escolha uma figura:\n1. Retângulo\n2. Quadrado\n3. Losango\n4. Trapézio\n5. Paralelogramo\n6. Triângulo\n7. Círculo");
+
+        if (escolha === '1') { // Retângulo
+            let base = parseFloat(prompt("Informe a base:"));
+            let altura = parseFloat(prompt("Informe a altura:"));
+            alert("A área do retângulo é: " + (base * altura));
+
+        } else if (escolha === '2') { // Quadrado
+            let lado = parseFloat(prompt("Informe o lado:"));
+            alert("A área do quadrado é: " + (lado * lado));
+
+        } else if (escolha === '3') { // Losango
+            let diagMaior = parseFloat(prompt("Informe a diagonal maior:"));
+            let diagMenor = parseFloat(prompt("Informe a diagonal menor:"));
+            alert("A área do losango é: " + ((diagMaior * diagMenor) / 2));
+
+        } else if (escolha === '4') { // Trapézio
+            let baseMaior = parseFloat(prompt("Informe a base maior:"));
+            let baseMenor = parseFloat(prompt("Informe a base menor:"));
+            let altura = parseFloat(prompt("Informe a altura:"));
+            alert("A área do trapézio é: " + ((baseMaior + baseMenor) * altura / 2));
+
+        } else if (escolha === '5') { // Paralelogramo
+            let base = parseFloat(prompt("Informe a base:"));
+            let altura = parseFloat(prompt("Informe a altura:"));
+            alert("A área do paralelogramo é: " + (base * altura));
+
+        } else if (escolha === '6') { // Triângulo
+            let base = parseFloat(prompt("Informe a base:"));
+            let altura = parseFloat(prompt("Informe a altura:"));
+            alert("A área do triângulo é: " + (base * altura / 2));
+
+        } else if (escolha === '7') { // Círculo
+            const pi = Math.PI;
+            let raio = parseFloat(prompt("Informe o raio:"));
+            alert("A área do círculo é: " + (pi * raio * raio));
+
+        } else {
+            alert("Opção inválida!");
+        }
+    </script>
+
+</body>
+</html>
